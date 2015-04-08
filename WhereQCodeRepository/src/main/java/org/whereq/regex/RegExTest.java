@@ -18,6 +18,13 @@ public class RegExTest {
 		 */
 		System.out.println(str.replaceAll("\\(.*?\\)|\\s*", ""));
 		
+		/*
+		 * replace the content in () and all of the spaces.
+		 * match the content in () and with (), regex is (.*), .* means greedy, \\s* means match all of the spaces
+		 * output should be ABC
+		 */
+		System.out.println(str.replaceAll("\\(.*\\)|\\s*", ""));
+		
 	}
 
 }
